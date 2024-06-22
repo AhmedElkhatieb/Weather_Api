@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light custom ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div id="logo-container" class="w-75">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-5 me-3">
+                            <div class="logo-icon">
+                                <img src="./img/logo.png" alt="cloud-logo">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="logo-cap">
+                                <h1>Weather</h1>
+                                <small>Tageline goes here</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="weather">
+
+        <div class="container">
+            <div class="search position-relative mt-5">
+                <input type="text" id="location" class="form-control rounded-pill" placeholder="Find your location">
+                <button class="find-btn btn btn-primary px-5 py-3 rounded-pill position-absolute">Find</button>
+            </div>
+            <div class="row gy-5 mt-3 ">
+                <div class="first-day col-md-4 pb-5 ">
+                    <div class="date-container d-flex justify-content-between">
+                        <div class="day">
+                            <p id="day-1" class="ms-2">Wednesday</p>
+                        </div>
+                        <div id="date-1" class="date">
+                            <p class="me-2">19June</p>
+                        </div>
+                    </div>
+                    <div class="weather-data">
+                        <p id="city">Cairo</p>
+                        <p id="temp-1">31.5°C</p>
+                        <img id="icon-status-1" src="" alt="Weather Icon" class="weather-icon">
+                        <p id="status-1">Clear</p>
+                        <div class="weather-info">
+                            <i class="fa-solid fa-umbrella"></i>
+                            <span id="humidity" class="me-3">20%</span>
+                            <i class="fa-solid fa-wind"></i>
+                            <span id="wind-speed" class="me-3">18Km\h</span>
+                            <i class="fa-solid fa-compass"></i>
+                            <span id="wind-direction">East</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-day col-md-4 pb-5 ">
+                    <div class="date-container d-flex justify-content-center">
+                        <div class="date">
+                            <p id="day-2">Thursday</p>
+                        </div>
+                    </div>
+                    <div class="info d-flex flex-column justify-content-center align-items-center mt-5">
+                        <img id="icon-status-2" src="" alt="Weather Icon" class="weather-icon">
+                        <p id="max-temp-2" class="max mt-3">40°C</p>
+                        <p id="min-temp-2" class="min mt-3">26.1°</p>
+                        <p id="status-2" class="status mt-3">Sunny</p>
+                    </div>
+                </div>
+                <div class="third-day col-md-4 pb-5">
+                    <div class="date-container d-flex justify-content-center">
+                        <div class="date">
+                            <p id="day-3">Thursday</p>
+                        </div>
+                    </div>
+                    <div class="info d-flex flex-column justify-content-center align-items-center mt-5">
+                        <img id="icon-status-3" src="" alt="Weather Icon" class="weather-icon">
+                        <p id="max-temp-3" class="max mt-3">40°C</p>
+                        <p id="min-temp-3" class="min mt-3">26.1°</p>
+                        <p id="status-3" class="status mt-3">Sunny</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="p-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-8">
+                    <div class="email position-relative">
+                        <input type="text" id="subscribe" class="form-control rounded-pill"
+                            placeholder="Enter your email to subscribe">
+                        <button
+                            class="find-btn btn btn-primary px-5 py-3 rounded-pill position-absolute">Subscribe</button>
+                    </div>
+                    <p class="copyright mt-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="icons d-flex">
+                        <div class="circular-icon me-1">
+                            <a href="#"><i class="fa-1x fa-brands fa-facebook"></i></a>
+                        </div>
+                        <div class="circular-icon me-1">
+                            <a href="#"><i class="fa-1x fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="circular-icon me-1">
+                            <a href="#"><i class="fa-1x fa-brands fa-google-plus"></i></a>
+                        </div>
+                        <div class="circular-icon">
+                            <a href="#"><i class="fa-1x fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
